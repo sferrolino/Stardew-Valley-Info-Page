@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title> Installing Frameworks </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+
+	<!--- FONTS --->
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<!--- VUEJS LIBRARY --->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"> </script>
+
+</head>
+
+<body>
+
+<!--- NAVIGATION BAR --->
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="summary.html">Summary</a>
+  <a class="active" href="install.html">Installation</a>
+  <a href="guide.html">How to Guide</a>
+  <a href="demo.html">Demo Page</a>
+  <a href="conclusion.html">Conclusion</a>
+  <a href="team.html">Team</a>
+</div>
+
+<br>
+
+<h1> Installing Frameworks: Laravel & VueJS </h1>
+
+<br>
+<br>
+<br>
+
+<!--- Install Composer --->
+<div class="center container words">
+	<h2> Before Installing Frameworks </h2>
+  <img src="https://getcomposer.org/img/logo-composer-transparent4.png" width=10%>
+  <p><i> Install composer, a dependency management tool for php to help set up our larevel application. </i></p>
+
+<div class="container2">
+  <h4>Update the package manager</h4>
+  <p class="code">sudo apt update</p>
+</div>
+
+<div class="container2">
+<h4>Run the following to install dependencies for installing composer</h4>
+<p class="code">sudo apt install curl php-cli php-mbstring git unzip</p>
+</div>
+
+<div class="container2">
+<h4>In your home directory, download composer installer using: </h4>
+<p class="code">curl -sS https://getcomposer.org/installer -o composer-setup.php</p>
+</div>
+
+<div class="container2">
+<h4>Install composer globally</h4>
+<p class="code">sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer</p>
+</div>
+
+<div class="container3">
+<h4>If there are no errors, you should now have composer installed.</h4>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--- Laravel Installation Guide --->
+<div class="center container words">
+	<h2> Backend Framework</h2>
+  <img src="https://laravel.com/img/logomark.min.svg" hspace="10"><img src="https://laravel.com/img/logotype.min.svg">
+  <p><i>We will install a Laravel/VueJS application on a server with a LAMP stack and on Ubuntu 18.04.</i></p>
+
+<div class="container2">
+<h4>Install some dependencies for laravel</h4>
+<p class="code">sudo apt install php-xml php-bcmath</p>
+</div>
+<div class="container2">
+<h4>Now, we can create a new laravel app using:</h4>
+<p class="code">composer create-project --prefer-dist laravel/laravel project_directory</p>
+</div>
+<div class="container3">
+<h4>Your new laravel project directory should now be created!</h4>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--- VUE installation guide --->
+<div class="center container words">
+	<h2> Frontend Framework </h2>
+  <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/vuejs-tutorial_2d2a853c-aa2f-44b0-80df-933b495f77f8.png?v=1509478492" width=20%> 
+	<p><i>We will use scaffodling provided by Larave to install Vue</i></p>
+
+<div class="container2">
+	<h4>Inside your laravel project, run the following to install laravel/ui package</h4>
+	<p class="code">composer require laravel/ui<p>
+</div>
+
+<div class="container2">
+	<h4>Now, install the Vue scaffolding with:</h4>
+	<p class="code">php artisan vue<p>
+	<p class="code">php artisan ui vue--auth</p>
+</div>
+
+<div class="container2">
+	<h4>Now, laravel's package dependencies will be updated to include vue. Install these dependencies with:</h4>
+	<p class="code">npm install<p>
+</div>
+
+<div class="container2">
+	<h4>Finally, compile your assets using</h4>
+	<p class="code">npm run dev</p>
+</div>
+
+<div class="container3">
+	<h4>Congratulations! You are done creating a laravel/vue application!</h4>
+</div>
+</div>
+
+</body>
+</html>
