@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title> Summary </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+	
+	<!--- FONTS --->
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+	<!--- VUEJS LIBRARY --->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"> </script>
+
+</head>
+
+<body>
+
+<!--- NAVIGATION BAR --->
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a class="active" href="summary.html">Summary</a>
+  <a href="install.html">Installation</a>
+  <a href="guide.html">How to Guide</a>
+  <a href="demo.html">Demo Page</a>
+  <a href="conclusion.html">Conclusion</a>
+  <a href="team.html">Team</a>
+</div>
+
+<br>
+
+<h1> SUMMARY </h1>
+
+<br>
+<br>
+<br>
+
+<!--- VUEJS TABLE --->
+<div class="center container">
+		<h2> VUE.JS </h2>
+<div class="container3 words" style="overflow-x:auto;">
+		<table id="firstTable" class="color">
+		  <thead>
+		    <tr>
+		      <th>STRENGTHS</th>
+		      <th>WEAKNESS</th>
+		      <th>WEBSITES THAT IT IS POPULAR WITH</th>
+		    </tr>
+		  </thead>
+
+		  <tbody>
+		    <tr v-for="row in rows">
+		      <td>{{row.s1}}</td>
+		      <td>{{row.w1}}</td>
+		      <td>{{row.d1}}</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+		<script>
+				var firstTable = new Vue({
+		  			el: '#firstTable',
+		  			data: {
+		    			rows: [
+					      { s1: "Smaller File Size", w1: "Fewer plugins and addons", d1: "Facebook"},
+					      { s1: "Easy to use", w1: "Not widely known", d1: "Adobe"},
+					      { s1: "Flexiable", w1: "", d1: "Netflix"}   
+		    			]
+		  			}
+				});
+		</script>
+
+	<p> The key qualities of Vue.js greatly outweigh the flaws it has. Making it appeal to front-end developers </p>
+</div>
+</div>
+<br><br><br><br>
+
+<!--- LARAVEL TABLE --->
+<div class="center container">
+		<h2> LARAVEL </h2>
+<div class="container3 words" style="overflow-x:auto;">
+		<table id="secondTable" class="color">
+		  <thead>
+		    <tr>
+		      <th>STRENGTHS</th>
+		      <th>WEAKNESS</th>
+		      <th>WEBSITES THAT IT IS POPULAR WITH</th>
+		    </tr>
+		  </thead>
+
+		  <tbody>
+		    <tr v-for="row in rows">
+		      <td>{{row.s2}}</td>
+		      <td>{{row.w2}}</td>
+		      <td>{{row.d2}}</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+		<script>
+				var secondTable = new Vue({
+		  			el: '#secondTable',
+		  			data: {
+		    			rows: [
+					      { s2: "Simple", w2: "Can be slow", d2: "9GAG"},
+					      { s2: "A lot of information on the internet", w2: "Code breaks when Laravel version is updated", d2: "Pfizer"},
+					      { s2: "Uses CSS and JS", w2: "", d2: "BBC"}   
+		    			]
+		  			}
+				});
+		</script>
+ <p> Due to the strengths that Laravel has, it appeals to back-end developers. The simplicity makes the weakness of updating the whole code with each update bearable </p>
+</div>
+</div>
+
+</body>
+</html>
