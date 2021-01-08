@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title> How to Guide </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+
+	<!--- FONTS --->
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+	<!--- VUEJS LIBRARY --->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"> </script>
+
+</head>
+
+<body>
+
+<!--- NAVIGATION BAR --->
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="summary.html">Summary</a>
+  <a href="install.html">Installation</a>
+  <a class="active" href="guide.html">How to Guide</a>
+  <a href="demo.html">Demo Page</a>
+  <a href="conclusion.html">Conclusion</a>
+  <a href="team.html">Team</a>
+</div>
+
+<br>
+
+<h1> How to Make an Appealing Webpage </h1>
+
+<br>
+<br>
+<br>
+
+
+<!--- VUE.JS GUIDE --->
+<div class="center container">
+	<h2> Frontend Framework: VueJS </h2>
+<div class="container3 words">
+	<p class="left">There are many different aspects that go into making an appealing webpage: format, visual appeal, usage
+	of elements, etc. The framework we decided to use for our webpage was VueJS. VueJS provided us with many 
+    different types components that we were able to incorporate into our webpage. We were able to use the v-for  
+	component for several different aspects for our page, this includes: create ordered/unordered lists and 
+	tables.It was fairly easy to implement these components; below I've attached our code. With v-for we were 
+	able to create a simple array of our tips and tricks in both an ordered or unordered list.</p>
+
+  
+<img src="https://i.imgur.com/msPc7m7.png" class="pic3">
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> Tables </h2>
+<div class="container3 words">
+	<p class="left">Here we were able to implement the same v-for component to create a table for our 'Most Cost Effective
+	Crop per Season'. This is very beginner friendly and saved us a lot of lines of code. Instead of creating
+	an element for each list object, you can easily implement it in a simple array.</p>
+
+<img src="https://i.imgur.com/ydQSIS8.png" class="pic3">
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> Pictures </h2>
+<div class="container3 words">
+    <p class="left">The next aspect of creating an appealing webpage is pictures. Similar to HTML/CSS we were able to
+    include images using the <img src=""> element. These images don't have to be saved locally from your
+    computer but can be taken off any website off Google. In our CSS style sheet we created a fixed format
+    for all our pictures which. These classes can be toggled to your liking; using attributes such as width,
+    height, display and margins.</p>
+
+
+<img src="https://i.imgur.com/U8wiPIr.png" class="pic3">
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> Formatting </h2>
+<div class="container3 words">
+    <p class="left">Another important part of creating a good looking webpage is to ensure everything is formatted properly
+    to the user on any given platform. The code snippet below is one of the few inline style sheets we created
+    for our iframe (video) object. We were able to align the video to the center of the page and toggle with them
+    margins, width and height to our desired liking. You can feel free to add other attributes as well.</p>
+
+
+<img src="https://i.imgur.com/SPDjIDm.png" class="pic3">
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> Keep it Simple!</h2>
+<div class="container3 words">
+    <p class="left">A website that is too cluttered with information or components is difficult for a user to stay focused. Any information that the webpage is trying to convey could easily be lost. We tried our best to keep our webpage as simple and clean looking as possible so that the information we want to get accross is clear and easy to understand.</p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> Backend Framework: Laravel </h2>
+<div class="container3 words">
+  	<p class="left">There are not too many things on the backend that can help your webpage look better on the front end. However, there are a few things that you can configure on Laravel that could make the user's experience during their visit a little better. </p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> Turn off Error Details </h2>
+<div class="container3 words">
+  	<p class="left"> After installing Laravel, error details are enabled by default for your application. If an error occurs, the user will be shown a detailed stack trace and error message. Make sure to turn these details off in the <span class="code">your_project/config/app.php</span> under <span class="code">debug</span> option to <span span class="code">false</span>.</p>.
+   <img src="http://www.final530.website/img/debug.JPG" class="pic3">
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> Customize Error Pages </h2>
+<div class="container3 words">
+  	<p class="left">Laravel allows you to create custom HTTP error pages. A common error that you could consider creating a custom page for, would be the "404 not found" error. This can be done easily by creating a <span class="code">404.blade.php</span> file inside the directory <span class="code">resources/views/errors</span>. Many websites now choose to customize their error pages in a fun way.</p>
+   <p class="left ref">Test out our custom 404 <a href="http://www.final530.website/whereismyfarm">here</a>!</p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="center container">
+	<h2> You've Got It From Here! </h2>
+<div class="container3 words">
+  	<p class="left">And with that, you've learned the basic how-to's on how to create a simple yet appealing webpage! Using VueJS elements along with basic HTML/CSS and some Laravel configurations.</p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
